@@ -1,0 +1,41 @@
+[debug] [2021-07-09T14:24:27.408Z] ----------------------------------------------------------------------
+[debug] [2021-07-09T14:24:27.412Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\13454\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login
+[debug] [2021-07-09T14:24:27.412Z] CLI Version:   9.16.0
+[debug] [2021-07-09T14:24:27.412Z] Platform:      win32
+[debug] [2021-07-09T14:24:27.412Z] Node Version:  v12.18.2
+[debug] [2021-07-09T14:24:27.414Z] Time:          Fri Jul 09 2021 09:24:27 GMT-0500 (GMT-05:00)
+[debug] [2021-07-09T14:24:27.415Z] ----------------------------------------------------------------------
+[debug] 
+[info] i  Firebase optionally collects CLI usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=580020080&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-07-09T14:25:15.585Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token  
+ {"code":"4/0AX4XfWjMxyansnFAdh0AKlXlKGPGGbJNgLkij_YxlJxqTF9da85MI_siKGhyeQXKnUqv8w","client_id":"563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com","client_secret":"j9iVZfS8kkCEFUPaAeJV0sAi","redirect_uri":"http://localhost:9005","grant_type":"authorization_code"}
+[debug] [2021-07-09T14:25:20.153Z] Token Fetch Error: FirebaseError: Server Error. tunneling socket could not be established, cause=getaddrinfo ENOTFOUND 7878
+    at Request._callback (C:\Users\13454\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:32:31)
+    at self.callback (C:\Users\13454\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:315:20)
+    at Request.EventEmitter.emit (domain.js:482:12)
+    at Request.onRequestError (C:\Users\13454\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:877:8)
+    at ClientRequest.emit (events.js:315:20)
+    at ClientRequest.EventEmitter.emit (domain.js:482:12)
+    at ClientRequest.onError (C:\Users\13454\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\tunnel-agent\index.js:179:21)
+    at Object.onceWrapper (events.js:422:26)
+    at ClientRequest.emit (events.js:315:20)
+    at ClientRequest.EventEmitter.emit (domain.js:482:12)
+    at Socket.socketErrorListener (_http_client.js:426:9)
+    at Socket.emit (events.js:315:20)
+    at Socket.EventEmitter.emit (domain.js:482:12)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+[info] 
+[info] Visit this URL on any device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=580020080&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob
+[info] 
+[debug] [2021-07-09T14:31:15.181Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token  
+ {"code":"","client_id":"563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com","client_secret":"j9iVZfS8kkCEFUPaAeJV0sAi","redirect_uri":"urn:ietf:wg:oauth:2.0:oob","grant_type":"authorization_code"}
