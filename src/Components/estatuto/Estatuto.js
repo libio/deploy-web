@@ -1,20 +1,12 @@
 import React, { useState } from "react";
-import Viewer, { Worker } from "@phuocng/react-pdf-viewer";
+/* import Viewer, { Worker } from "@phuocng/react-pdf-viewer";
 import "@phuocng/react-pdf-viewer/cjs/react-pdf-viewer.css";
-/* import { Document, Page, pdfjs} from "react-pdf";
-import Loader from "./Loader";
-import ControlPanel from "./ControlPanel";
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
-
-
-
-
  */
-import estatuto from './estatuto.pdf';
-
-
+import estatuto from "./estatuto.pdf";
+import { Document, Page, Text, View, StyleSheet } from "@react-pdf/renderer";
+import { PDFViewer } from '@react-pdf/renderer';
 const Estatuto = () => {
-  const [scale, setScale] = useState(1.0);
+  /* const [scale, setScale] = useState(1.0);
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
   const [isLoading, setIsLoading] = useState(true);
@@ -22,7 +14,29 @@ const Estatuto = () => {
   function onDocumentLoadSuccess({ numPages }) {
     setNumPages(numPages);
     setIsLoading(false);
-  }
+  } */
+  // Create styles
+  const styles = StyleSheet.create({
+    page: {
+      flexDirection: "row",
+      backgroundColor: "#E4E4E4",
+    },
+    section: {
+      margin: 10,
+      padding: 10,
+      flexGrow: 1,
+    },
+  });
+  const MyDocument = () => (
+    <Document>
+      <Page size="A4" style={styles.page}>
+        <View style={styles.section}>
+          <Text>Section #1</Text>
+        </View>
+        
+      </Page>
+    </Document>
+  );
   return (
     <section id="about" className="mt-5">
       <div className="container" data-aos="fade-up">
@@ -95,11 +109,12 @@ const Estatuto = () => {
               </section>
             </div> */}
 
-            <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.4.456/build/pdf.worker.min.js">
+            {/*     <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.4.456/build/pdf.worker.min.js">
               <div id="pdfviewer">
                 <Viewer fileUrl={estatuto} />
               </div>
-            </Worker>
+            </Worker> */}
+            
             <section className="breadcrumbs mt-1">
               <div className="container">
                 <div className="d-flex justify-content-between align-items-center">
@@ -123,10 +138,17 @@ const Estatuto = () => {
                 </div>
               </div>
             </section>
+            <div className="Row" >
+            <PDFViewer >
+             <MyDocument/>
+            </PDFViewer>
+            </div>
           </div>
+          
         </div>
+        
       </div>
-      /
+      
     </section>
   );
 };

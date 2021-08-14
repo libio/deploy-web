@@ -1,6 +1,4 @@
 import React from "react";
-import Foto from "./Cangalli.jpg";
-import {Carousel} from 'react-bootstrap';
 const Home = () => {
     
   return (

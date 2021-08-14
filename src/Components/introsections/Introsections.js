@@ -25,9 +25,6 @@ const Introsections = () => {
                   <p className="animate__animated animate__fadeInUp">
                  
                   </p>
-  
-
-                  
                 </div>
               </div>
             </div>

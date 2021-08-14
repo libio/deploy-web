@@ -465,16 +465,25 @@ const HijosQorichayña = () => {
                   <Card.Body>
                     <ListGroup>
                       <ListGroup.Item>
-                        <SoundCloudWidget url="https://soundcloud.com/encantosdelande/pantipallay" />
+                        <SoundCloudWidget url="https://soundcloud.com/libio/centro-musical-qorichaya-4?in=libio/sets/conjunto-musical-folclorico-qori-chayna" />
                       </ListGroup.Item>
                       <ListGroup.Item>
-                        <SoundCloudWidget url="https://soundcloud.com/libio/centro-musical-qorichaya-cangallinita" />
+                        <SoundCloudWidget url="https://soundcloud.com/libio/centro-musical-qorichaya-3?in=libio/sets/conjunto-musical-folclorico-qori-chayna" />
                       </ListGroup.Item>
                       <ListGroup.Item>
-                        <SoundCloudWidget url="https://soundcloud.com/libio/centro-musical-qorichaya-cangallinita" />
+                        <SoundCloudWidget url="https://soundcloud.com/libio/centro-musical-qorichaya-2?in=libio/sets/conjunto-musical-folclorico-qori-chayna" />
                       </ListGroup.Item>
-                      <ListGroup.Item><Button  variant="info" size="lg" ></Button></ListGroup.Item>
-                      <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
+                      <ListGroup.Item>
+                        <SoundCloudWidget url="https://soundcloud.com/libio/centro-musical-qorichaya-1?in=libio/sets/conjunto-musical-folclorico-qori-chayna" />
+                      </ListGroup.Item>
+                      <ListGroup.Item>
+                        <SoundCloudWidget url="https://soundcloud.com/libio/centro-musical-qorichaya?in=libio/sets/conjunto-musical-folclorico-qori-chayna" />
+                      </ListGroup.Item>
+                      <ListGroup.Item>
+                        <SoundCloudWidget url="https://soundcloud.com/libio/centro-musical-qorichaya-wai?in=libio/sets/conjunto-musical-folclorico-qori-chayna" />
+                      </ListGroup.Item>
+                      
+                      
                     </ListGroup>
                   </Card.Body>
                 </Accordion.Collapse>

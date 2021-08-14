@@ -22,6 +22,7 @@ import HijosQorichayña from './Components/historia/HijosQorichayña'
 import RegistroFamiliar from './Components/registrofamiliar/RegistroFamiliar';
 import VisionObjetivos from './Components/vision/VisionObjetivos';
 import Organigrama from './Components/organigrama/Organigrama';
+import Prueba from './Components/historia/Prueba';
 function App() {
   return (
     < >
@@ -84,7 +85,10 @@ function App() {
             <HijosQorichayña/>
             <Backup/>
           </Route>
-
+          <Route path="/Costumbres">
+              <SubHeader/>
+              <Prueba/> 
+          </Route>
           <Route path="/">
             <Header/>
             <Home />

@@ -1,13 +1,6 @@
 import React from "react";
 import Qorichayña from "./Qorichayña";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  NavLink,
-} from "react-router-dom";
-
+import { Link } from "react-router-dom";
 const Historia = () => {
   return (
     <section id="about" className="section-bg mt-5">
@@ -71,9 +64,9 @@ const Historia = () => {
                     >
                       <i className="ion ion-eye" />
                     </a>
-                    <a href="/Qori Chayña" className="link-details" title="More Details">
+                    <Link to="/Qori Chayña" className="link-details" title="More Details">
                       <i className="ion ion-android-open" />
-                    </a>
+                    </Link>
                   </figure>
                   <div className="portfolio-info">
                     <h4>
@@ -99,13 +92,13 @@ const Historia = () => {
                     >
                       <i className="ion ion-eye" />
                     </a>
-                    <a
-                      href="Paras Qhoya Punku"
+                    <Link
+                      to="Paras Qhoya Punku"
                       className="link-details"
                       title="More Details"
                     >
                       <i className="ion ion-android-open" />
-                    </a>
+                    </Link>
                   </figure>
                   <div className="portfolio-info">
                     <h4>
@@ -131,13 +124,13 @@ const Historia = () => {
                     >
                       <i className="ion ion-eye" />
                     </a>
-                    <a
-                      href="Hijos de Qorichayña"
+                    <Link
+                      to="Hijos de Qorichayña"
                       className="link-details"
                       title="More Details"
                     >
                       <i className="ion ion-android-open" />
-                    </a>
+                    </Link>
                   </figure>
                   <div className="portfolio-info">
                     <h4>
