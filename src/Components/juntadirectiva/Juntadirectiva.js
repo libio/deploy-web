@@ -5,7 +5,7 @@ const Juntadirectiva = () => {
   return (
     <>
       <section id="services">
-        <div className="container mt-5" data-aos="fade-up">
+        <div className="container mt-5 " data-aos="fade-up">
           <header className="section-header wow fadeInUp">
             <h3>Junta Directiva Comunal Periodo 2021 - 2024</h3>
             <section id="testimonials" className="section-bg mt-5">
@@ -16,7 +16,7 @@ const Juntadirectiva = () => {
                     <img
                       src="assets/img/image.png"
                       className="testimonial-img"
-                      alt
+                      alt=""
                     />
                     <h3>Eusebio Fernández Mamani</h3>
                     <h4>Presidente</h4>
@@ -24,7 +24,7 @@ const Juntadirectiva = () => {
                       <img
                         src="assets/img/quote-sign-left.png"
                         className="quote-sign-left"
-                        alt
+                        alt=""
                       />
                       Export tempor illum tamen malis malis eram quae irure esse
                       labore quem cillum quid cillum eram malis quorum velit

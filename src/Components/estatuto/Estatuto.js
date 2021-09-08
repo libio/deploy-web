@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-/* import Viewer, { Worker } from "@phuocng/react-pdf-viewer";
+import Viewer, { Worker } from "@phuocng/react-pdf-viewer";
 import "@phuocng/react-pdf-viewer/cjs/react-pdf-viewer.css";
- */
+ 
 import estatuto from "./estatuto.pdf";
 import { Document, Page, Text, View, StyleSheet } from "@react-pdf/renderer";
 import { PDFViewer } from '@react-pdf/renderer';
@@ -109,11 +109,11 @@ const Estatuto = () => {
               </section>
             </div> */}
 
-            {/*     <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.4.456/build/pdf.worker.min.js">
+               <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.4.456/build/pdf.worker.min.js">
               <div id="pdfviewer">
                 <Viewer fileUrl={estatuto} />
               </div>
-            </Worker> */}
+            </Worker> 
             
             <section className="breadcrumbs mt-1">
               <div className="container">
