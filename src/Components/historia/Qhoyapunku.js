@@ -1,10 +1,11 @@
-import React from "react";
+import React,{Fragment} from "react";
 import { Carousel } from "react-bootstrap";
 import ReactPlayer from "react-player";
 
-const Qhoyapunku = () => {
+const Qhoyapunku = ({children}) => {
   return (
     <>
+    {children}
       <main id="main">
         {/* ======= Breadcrumbs Section ======= */}
         <section className="breadcrumbs">

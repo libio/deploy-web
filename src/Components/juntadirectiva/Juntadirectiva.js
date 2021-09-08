@@ -1,9 +1,10 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { Form, InputGroup, FormControl, Carousel } from "react-bootstrap";
 
-const Juntadirectiva = () => {
+const Juntadirectiva = ({ children }) => {
   return (
     <>
+      {children}
       <section id="services">
         <div className="container mt-5 " data-aos="fade-up">
           <header className="section-header wow fadeInUp">
@@ -286,7 +287,8 @@ const Juntadirectiva = () => {
           <header className="section-header">
             <h3>Comités Especiales</h3>
             <p>
-              La comunidad Campesina de <strong>Cangalli</strong> tiene conformada las siguientes comités especiales dentro de la comuna.
+              La comunidad Campesina de <strong>Cangalli</strong> tiene
+              conformada las siguientes comités especiales dentro de la comuna.
             </p>
           </header>
           <div className="row about-cols">
@@ -328,7 +330,7 @@ const Juntadirectiva = () => {
                   <a href="#">Comité Agricola</a>
                 </h2>
                 <p>
-                <strong>Presidente</strong>: Claudio Canchi Maldonado
+                  <strong>Presidente</strong>: Claudio Canchi Maldonado
                   <br />
                   <strong>Secretario</strong>: David Flores Montufar
                   <br />
@@ -350,7 +352,7 @@ const Juntadirectiva = () => {
                   <a href="#">Comité Alpaca</a>
                 </h2>
                 <p>
-                <strong>Presidente</strong>: Wilbert Titto alarcon
+                  <strong>Presidente</strong>: Wilbert Titto alarcon
                   <br />
                   <strong>Secretario</strong>: Tomas Cuyutupa Paucar
                   <br />
@@ -376,7 +378,7 @@ const Juntadirectiva = () => {
                   <a href="#">Comité Forestacion</a>
                 </h2>
                 <p>
-                <strong>Presidente</strong>: David Ramirez Castillo
+                  <strong>Presidente</strong>: David Ramirez Castillo
                   <br />
                   <strong>Secretario</strong>: ASU Com
                   <br />
@@ -398,7 +400,7 @@ const Juntadirectiva = () => {
                   <a href="#">Comité JASS</a>
                 </h2>
                 <p>
-                <strong>Presidente</strong>: Braulio Maldonado Galindo
+                  <strong>Presidente</strong>: Braulio Maldonado Galindo
                   <br />
                   <strong>Secretario</strong>: Faustino Arminta Arque
                   <br />
@@ -424,7 +426,7 @@ const Juntadirectiva = () => {
                   <a href="#">Tenientes Auxiliares</a>
                 </h2>
                 <p>
-                <strong>Presidente</strong>: Claudio Canchi Maldonado
+                  <strong>Presidente</strong>: Claudio Canchi Maldonado
                   <br />
                   <strong>Secretario</strong>: ASU Company
                   <br />

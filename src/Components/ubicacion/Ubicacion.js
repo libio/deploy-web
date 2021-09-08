@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,Fragment } from "react";
 import GoogleMapReact from "google-map-react";
 import ReactWeather, { useOpenWeather } from "react-open-weather";
 import {
@@ -18,6 +18,7 @@ import {
   ListGroup,
   Form,
 } from "react-bootstrap";
+
 
 const CustomSkinMap = withScriptjs(
   withGoogleMap(() => (
@@ -95,7 +96,7 @@ const CustomSkinMap = withScriptjs(
   ))
 );
 
-const Ubicacion = () => {
+const Ubicacion = ({children}) => {
   const [map, setMap] = useState({
     center: {
       lat: -14.024226981186487,
@@ -113,6 +114,7 @@ const Ubicacion = () => {
   const AnyReactComponent = ({ text }) => <div>{text}</div>;
   return (
     <>
+    {children}
       <section id="portfolio" className="section-bg mt-5">
         <div className="container">
           <header className="section-header">

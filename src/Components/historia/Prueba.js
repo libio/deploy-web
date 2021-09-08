@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from "react";
+import React,{useState,useEffect,Fragment} from "react";
 // Import the main component
 import { Viewer } from '@react-pdf-viewer/core'; // install this library
 // Plugins
@@ -9,7 +9,7 @@ import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 // Worker
 import { Worker } from '@react-pdf-viewer/core'; // install this library
 import pdfdocument from './prueba.pdf'
-const Prueba = () => {
+const Prueba = ({children}) => {
   // Create new plugin instance
   const defaultLayoutPluginInstance = defaultLayoutPlugin();
   useEffect(()=>{
@@ -63,7 +63,9 @@ const Prueba = () => {
   }
     
   return (
-    <section id="about" className="section-bg mt-5">
+    <Fragment>
+      {children}
+      <section id="about" className="section-bg mt-5">
       <div className="container" data-aos="fade-up">
         <header className="section-header">
           <h3 className="section-title">Historia</h3>
@@ -100,6 +102,8 @@ const Prueba = () => {
         
       </div>
     </section>
+    </Fragment>
+    
   );
 };
 export default Prueba;

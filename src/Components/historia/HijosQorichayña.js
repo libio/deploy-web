@@ -1,8 +1,8 @@
-import React,{useState} from "react";
+import React,{useState,Fragment} from "react";
 import { Carousel ,Card,ListGroup,Accordion,Button} from "react-bootstrap";
 import SoundCloudWidget from "react-simple-soundcloud-widget";
 import Gallery from 'react-photo-gallery';
-const HijosQorichayña = () => {
+const HijosQorichayña = ({children}) => {
   const photos = [
     {
     src:"assets/img/portfolio/hijosqorichayña1.jpg",
@@ -41,6 +41,7 @@ const HijosQorichayña = () => {
   }
   return (
     <>
+    {children}
       <section className="portfolio-details mt-5" id="about">
         <div className="container mt-5">
           <header className="section-header wow fadeInUp">

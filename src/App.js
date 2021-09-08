@@ -1,105 +1,118 @@
-
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from './Components/header/Header';
-import Introsections from './Components//introsections/Introsections';
-import Footer from './Components/footer/Footer';
-import Backup from './Components/backup/Backup';
-import Ubicacion from './Components/ubicacion/Ubicacion';
-import Featured from './Components/featured/Featured';
-import '@phuocng/react-pdf-viewer/cjs/react-pdf-viewer.css';
-import Presentacion from './Components/presentacion/Presentacion';
-import Home from './Components/home/Home';
-import Juntadirectiva from './Components/juntadirectiva/Juntadirectiva'
-import {BrowserRouter as Router, Switch,Route, Link} from 'react-router-dom'
-import Estatuto from './Components/estatuto/Estatuto'
-import Resoluciones from './Components/resoluciones/Resoluciones'
-import SubHeader from './Components/header/SubHeader';
-import Historia from './Components/historia/Historia';
-import Qorichayña from './Components/historia/Qorichayña';
-import Qhoyapunku from './Components/historia/Qhoyapunku';
-import HijosQorichayña from './Components/historia/HijosQorichayña'
-import RegistroFamiliar from './Components/registrofamiliar/RegistroFamiliar';
-import VisionObjetivos from './Components/vision/VisionObjetivos';
-import Organigrama from './Components/organigrama/Organigrama';
-import Prueba from './Components/historia/Prueba';
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Header from "./Components/header/Header";
+import Introsections from "./Components//introsections/Introsections";
+import Footer from "./Components/footer/Footer";
+import Backup from "./Components/backup/Backup";
+import Ubicacion from "./Components/ubicacion/Ubicacion";
+import Featured from "./Components/featured/Featured";
+import "@phuocng/react-pdf-viewer/cjs/react-pdf-viewer.css";
+import Presentacion from "./Components/presentacion/Presentacion";
+import Home from "./Components/home/Home";
+import Juntadirectiva from "./Components/juntadirectiva/Juntadirectiva";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Estatuto from "./Components/estatuto/Estatuto";
+import Resoluciones from "./Components/resoluciones/Resoluciones";
+import SubHeader from "./Components/header/SubHeader";
+import Historia from "./Components/historia/Historia";
+import Qorichayña from "./Components/historia/Qorichayña";
+import Qhoyapunku from "./Components/historia/Qhoyapunku";
+import HijosQorichayña from "./Components/historia/HijosQorichayña";
+import RegistroFamiliar from "./Components/registrofamiliar/RegistroFamiliar";
+import VisionObjetivos from "./Components/vision/VisionObjetivos";
+import Organigrama from "./Components/organigrama/Organigrama";
+import Prueba from "./Components/historia/Prueba";
+import ContainerPresentacion from "./container/presentacion";
 function App() {
   return (
-    < >
+    <>
       <Router>
         <Switch>
-        <Route path="/Presentacion">
-            <SubHeader/>
-            <Presentacion />
+          <Route path="/Presentacion">
+            <Presentacion>
+              <SubHeader />
+            </Presentacion>
           </Route>
           <Route path="/Junta Directiva">
-            <SubHeader/>
-            <Juntadirectiva />
-            <Backup/>
+            <Juntadirectiva>
+              <SubHeader />
+            </Juntadirectiva>
+            <Backup />
           </Route>
           <Route path="/Registro Familiar">
-            <SubHeader/>
-            <RegistroFamiliar />
-            <Backup/>
+            <RegistroFamiliar>
+              <SubHeader />
+            </RegistroFamiliar>
+            <Backup />
           </Route>
           <Route path="/Visión y Objetivos">
-            <SubHeader/>
-            <VisionObjetivos />
-            <Backup/>
+            <VisionObjetivos>
+              <SubHeader />
+            </VisionObjetivos>
+            <Backup />
           </Route>
           <Route path="/Organigrama de la Comunidad">
-            <SubHeader/>
-            <Organigrama />
-            <Backup/>
+            <Organigrama>
+              <SubHeader />
+            </Organigrama>
+            <Backup />
           </Route>
           <Route path="/Estatuto">
-            <SubHeader/>
-            <Estatuto />
-            <Backup/>
+            
+            <Estatuto >
+            <SubHeader />
+            </Estatuto>
+            <Backup />
           </Route>
           <Route path="/Resoluciones">
-            <SubHeader/>
-            <Resoluciones />
-            <Backup/>
+            <Resoluciones>
+              <SubHeader />
+            </Resoluciones>
+            <Backup />
           </Route>
           <Route path="/Ubicacion">
-            <SubHeader/>
-            <Ubicacion />
+            <Ubicacion>
+              <SubHeader />
+            </Ubicacion>
           </Route>
           <Route path="/Historia">
-            <SubHeader/>
-            <Historia />
-          </Route>  
+            <Historia>
+              <SubHeader />
+            </Historia>
+          </Route>
           <Route path="/Qori Chayña">
-            <SubHeader/>
-            <Qorichayña/>
-            <Backup/>
+            <Qorichayña>
+              <SubHeader />
+            </Qorichayña>
+            <Backup />
           </Route>
           <Route path="/Paras Qhoya Punku">
-            <SubHeader/>
-            <Qhoyapunku/>
-            <Backup/>
+            <Qhoyapunku>
+              <SubHeader />
+            </Qhoyapunku>
+            <Backup />
           </Route>
           <Route path="/Hijos de Qorichayña">
-            <SubHeader/>
-            <HijosQorichayña/>
-            <Backup/>
+            <HijosQorichayña>
+              <SubHeader />
+            </HijosQorichayña>
+            <Backup />
           </Route>
           <Route path="/Costumbres">
-              <SubHeader/>
-              <Prueba/> 
+            <Prueba>
+              <SubHeader />
+            </Prueba>
           </Route>
           <Route path="/">
-            <Header/>
+            <Header />
             <Home />
           </Route>
           <Route path="/Home">
             <Home />
           </Route>
         </Switch>
-        <Footer/>
+        <Footer />
       </Router>
-     
     </>
   );
 }

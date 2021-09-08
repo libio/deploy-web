@@ -1,4 +1,4 @@
-import React ,{useState}from "react";
+import React, { useState } from "react";
 import SoundCloudWidget from "react-simple-soundcloud-widget";
 import {
   Carousel,
@@ -11,54 +11,51 @@ import {
   ListGroup,
 } from "react-bootstrap";
 import ReactPlayer from "react-player";
-import Gallery from 'react-photo-gallery';
-const HijosQorichayña = () => {
-  
-  const [isToggleOn,setisToggleOn]= useState(true);
+import Gallery from "react-photo-gallery";
+const HijosQorichayña = ({ children }) => {
+  const [isToggleOn, setisToggleOn] = useState(true);
   const [info, setInfo] = useState({
     estado: false,
   });
   const photos = [
     {
-    src:"assets/img/portfolio/hijosqorichayña1.jpg",
-    width: 5,
-    height: 3
-  },
-  {
-    src:"assets/img/portfolio/hijosqorichayña2.png",
-    width: 2,
-    height: 1
-  },
-  {
-    src: "assets/img/portfolio/hijosqorichayña4.jpg",
-    width: 3,
-    height: 4
-  },
-  {
-    src: "assets/img/portfolio/hijosqorichayña5.jpg",
-    width: 3,
-    height: 4
-  },
-  {
-    src: "assets/img/portfolio/hijosqorichayña6.jpg",
-    width: 5,
-    height: 3
-  }
+      src: "assets/img/portfolio/hijosqorichayña1.jpg",
+      width: 5,
+      height: 3,
+    },
+    {
+      src: "assets/img/portfolio/hijosqorichayña2.png",
+      width: 2,
+      height: 1,
+    },
+    {
+      src: "assets/img/portfolio/hijosqorichayña4.jpg",
+      width: 3,
+      height: 4,
+    },
+    {
+      src: "assets/img/portfolio/hijosqorichayña5.jpg",
+      width: 3,
+      height: 4,
+    },
+    {
+      src: "assets/img/portfolio/hijosqorichayña6.jpg",
+      width: 5,
+      height: 3,
+    },
   ];
 
- 
   const handleChange = () => {
-    setisToggleOn({...isToggleOn,
-      isToggleOn:!isToggleOn
-    });
+    setisToggleOn({ ...isToggleOn, isToggleOn: !isToggleOn });
   };
-  const handleClick=()=> {
-    setInfo(prevState => ({
-      estado: !prevState.estado
+  const handleClick = () => {
+    setInfo((prevState) => ({
+      estado: !prevState.estado,
     }));
-  }
+  };
   return (
     <>
+      {children}
       <section className="portfolio-details mt-5" id="about">
         <div className="container mt-5">
           <header className="section-header wow fadeInUp">
@@ -394,7 +391,6 @@ const HijosQorichayña = () => {
             {/*  <div>
                 <ReactPlayer url="https://soundcloud.com/encantosdelande/pantipallay" />
               </div>  */}
-            
           </div>
           <Container>
             <Row>
@@ -438,27 +434,37 @@ const HijosQorichayña = () => {
           <header className="section-header">
             <h3>Repertorio de Canciones</h3>
             <p>
-              Nuestro repertorio de canciones, que forman parte de nuestra identidad cultural 
-              de nuestra Tierra, pais o region ya que exponen nuestras diversas traciones a traves de nuestras
-              composiciones musicales.
+              Nuestro repertorio de canciones, que forman parte de nuestra
+              identidad cultural de nuestra Tierra, pais o region ya que exponen
+              nuestras diversas traciones a traves de nuestras composiciones
+              musicales.
             </p>
           </header>
 
           <div className="skills-content">
-          <Card>
-          <Card.Body>
-            <ListGroup>
-              <ListGroup.Item>
-                <SoundCloudWidget url="https://soundcloud.com/libio/centro-musical-qorichaya-cangallinita" />
-              </ListGroup.Item>
-            </ListGroup>
-            </Card.Body>
+            <Card>
+              <Card.Body>
+                <ListGroup>
+                  <ListGroup.Item>
+                    <SoundCloudWidget url="https://soundcloud.com/libio/centro-musical-qorichaya-cangallinita" />
+                  </ListGroup.Item>
+                </ListGroup>
+              </Card.Body>
             </Card>
             <Accordion>
               <Card>
                 <Card.Header>
-                  <Accordion.Toggle onClick={handleClick}  as={Button} variant="danger" size="lg" block eventKey="0">
-                  {info.estado ? "Ocultar canciones":"Mostrar mas canciones"}
+                  <Accordion.Toggle
+                    onClick={handleClick}
+                    as={Button}
+                    variant="danger"
+                    size="lg"
+                    block
+                    eventKey="0"
+                  >
+                    {info.estado
+                      ? "Ocultar canciones"
+                      : "Mostrar mas canciones"}
                   </Accordion.Toggle>
                 </Card.Header>
                 <Accordion.Collapse eventKey="0">
@@ -482,8 +488,6 @@ const HijosQorichayña = () => {
                       <ListGroup.Item>
                         <SoundCloudWidget url="https://soundcloud.com/libio/centro-musical-qorichaya-wai?in=libio/sets/conjunto-musical-folclorico-qori-chayna" />
                       </ListGroup.Item>
-                      
-                      
                     </ListGroup>
                   </Card.Body>
                 </Accordion.Collapse>
@@ -498,7 +502,6 @@ const HijosQorichayña = () => {
             <h3 className="section-title">Galeria Fotos</h3>
           </header>
           <Gallery photos={photos} />
-          
         </div>
       </section>
     </>
