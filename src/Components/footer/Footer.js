@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -18,19 +19,20 @@ const Footer = () => {
               <h4>ENLACES ÚTILES</h4>
               <ul>
                 <li>
-                  <i className="ion-ios-arrow-right" /> <a href="#">Inicio</a>
+                  <i className="ion-ios-arrow-right" /> 
+                  <Link to="/">Inicio</Link>
                 </li>
                 <li>
                   <i className="ion-ios-arrow-right" />{" "}
-                  <a href="#">Presentacion</a>
+                  <Link to="/Presentacion">Presentacion</Link>
                 </li>
                 <li>
                   <i className="ion-ios-arrow-right" />{" "}
-                  <a href="#">Junta Directiva</a>
+                  <Link to="/Junta Directiva">Junta Directiva</Link>
                 </li>
                 <li>
                   <i className="ion-ios-arrow-right" />{" "}
-                  <a href="#">Resoluciones</a>
+                  <Link to="/Resoluciones">Resoluciones</Link>
                 </li>
               </ul>
             </div>

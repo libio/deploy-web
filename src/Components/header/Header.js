@@ -15,7 +15,7 @@ const Header = () => {
       <Navbar.Brand >
         <div className="col-xl-11 d-flex align-items-center">
           <h1 className="logo mr-auto">
-            <Link to="/Home" className="footer-top" style={stylelink}>C. Cangalli</Link>
+            <Link to="/" className="footer-top" style={stylelink}>C. Cangalli</Link>
           
           </h1>
         </div>
